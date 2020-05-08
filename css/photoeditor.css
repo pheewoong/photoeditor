@@ -71,15 +71,17 @@ select::-ms-expand {display:none; }
 
 
 div.wrap_photoEditor {position:relative;}
-div.sidebar{position:fixed; left:0; top:0; bottom:0; width:94px; border-right:1px solid #dedede;}
+div.sidebar{position:fixed; width:94px; left:0; top:0; bottom:0; border-right:1px solid #dedede;}
 div.toolBar{}
 div.item_tool {width:100%; border-bottom:1px solid #dedede; padding:16px 0; text-align:center; cursor:pointer;}
-div.item_tool span.itemIcon {display:inline-block; width:25px; height:20px; background:#000;}
-div.item_tool span.itemName {margin:5px 0 0 0; display:block;}
+div.item_tool span.itemIcon {display:inline-block; width:25px; height:20px; border:1px solid #000;}
+div.item_tool span.itemName {margin:5px 0 0 0; display:block; color:#303030;}
 div.item_tool:hover {background:#f9f9f9;}
-div.item_tool.active {background:#226bff; color:#fff;}
+div.item_tool.active {background:#226bff;}
+div.item_tool.active span.itemIcon{border:1px solid #fff;}
+div.item_tool.active span.itemName{color:#fff;}
 
-
+div.toolLibrary {position:fixed; width:260px; top:0; left:94px; bottom:0; border-right:1px solid #dedede;}
 
 
 
