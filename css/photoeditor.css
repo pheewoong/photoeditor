@@ -78,6 +78,7 @@ select::-ms-expand {display:none; }
 .mg_r10 {margin-right:10px;}
 
 .w160 {width:160px;}
+.w50p {width:50%;}
 .w100p {width:100%;}
 
 div.wrap_photoEditor {position:relative;}
@@ -110,7 +111,7 @@ div.input_searchBox {position:relative;}
 div.input_searchBox input {width:100%; border-radius:5px; height:36px; padding:0 32px; font-size:14px;}
 div.input_searchBox input:focus {border:1px solid #696969;}
 div.input_searchBox:before {content:""; display:inline-block; width:16px; height:16px; background:url(../img/photoEditor_sprite.png) no-repeat 0 0; position:absolute; top:10px; left:10px; }
-div.input_searchBox button.text_del {display:inline-block;width: 25px;height: 25px;background: url(../img/photoEditor_sprite.png) no-repeat -21px 8px;position:absolute;right: 8px;top: 6px; border-radius:12.5px;}
+div.input_searchBox button.text_del {display:inline-block;width: 25px;height: 25px;background: url(../img/photoEditor_sprite.png) no-repeat -21px 8px;position:absolute;right: 8px;top: 6px;}
 div.input_searchBox button.text_del:hover {background-color:#efefef;}
 div.input_searchBox button.text_del:active {background-color:#ccc;}
 
@@ -127,7 +128,17 @@ div.editCanvas img {max-width:500px; max-height:350px; }
 div.canvasArea {position:relative; display:inline-block; margin-top:60px;}
 div.canvasSizeValue {display:inline-block; position:absolute; top:-26px; left:0; color:#8e8e8e; font-size:13px;}
 
+/* tab style */
+ul.tabtypeA {font-size:0;}
+ul.tabtypeA li {position:relative; display:inline-block;  height:36px; line-height:36px; text-align:center; border:1px solid #ccc; overflow:hidden; background:#f9f9f9;}
+ul.tabtypeA li:first-child {border-right:none;}
+ul.tabtypeA li:last-child {border-left:none;}
+ul.tabtypeA li a {display:block; color:#8e8e8e; font-size:15px;}
+ul.tabtypeA li a:hover {color: #2a2a2a;}
+ul.tabtypeA li.on {border:1px solid #226bff; background:#fff;}
+ul.tabtypeA li.on a{color:#226bff}
 
+	
 /* button style */
 .btn_sizeA {height:36px; line-height:36px; text-align:center; border-radius:5px; font-size:14px;}
 
@@ -145,6 +156,13 @@ div.canvasSizeValue {display:inline-block; position:absolute; top:-26px; left:0;
 .disabled{background:#f7f7f7 !important; color:#999 !important; cursor:default !important;}
 .disabled i[class^="icon_"]{opacity:0.5;}
 
+/* fileAttatch */
+div.file_input {display:inline-block; text-align:left;}
+div.file_input label {display:block; position:relative; line-height:36px;}
+div.file_input label i{opacity:1!important;}
+div.file_input label input {position:absolute;width:0;height:0;overflow:hidden;}
+div.file_input input[type=text] {padding:0 35px 0 6px; vertical-align:middle; display:block; font-size:14px; background:#fff ; text-overflow:ellipsis; border:1px solid #ccc; height:36px;}
+
 /* icon style */
 [class^="icon_"] {display:inline-block;  background: url(../img/photoEditor_sprite.png);}
 .icon_upload {width:13px; height:16px; background-position:-67px 0;}
@@ -154,19 +172,30 @@ div.canvasSizeValue {display:inline-block; position:absolute; top:-26px; left:0;
 .icon_reset {position:relative; top:3px; width:16px; height:16px; background-position:-60px -81px;}
 
 div.library_list {overflow-y:auto; position:fixed; bottom:0; width:260px; text-align:center;}
-div.library_list.typeA {top:195px;}
-div.library_list.typeB {top:149px;}
-div.library_list.typeC {top:161px;}
+div.library_list.templateList {top:149px;}
+div.library_list.phtolist {top:161px;}
+div.library_list.stickerList {top:207px;}
 div.library_list div.listBox {display:inline-block; width:230px;}
 div.library_list ul {font-size:0; text-align:left;}
 div.library_list ul li {display:inline-block; width:70px; height:104px; overflow:hidden; background:#ccc; margin:10px 10px 0 0; cursor:pointer;}
 div.library_list ul li:nth-child(3n) {margin-right:0;}
 div.library_list ul li:hover {border:1px solid #2a2a2a;}
-div.library_list ul li img {width:100%; height:auto;}
+div.library_list ul li img {max-height:100%; max-width:100%; width:auto; height:auto;}
 div.noneList {width:100%; line-height:200px; font-size:15px; text-align:center; color:#a7a7a7;}
+
+
+div.library_list.stickerList ul li {width:100%; height:40px; margin:10px 0 0 0;  background:#fff; text-align:center; border:1px solid #ccc; border-radius:5px;}
+
+
+
+
 
 div.canvasEditbar {position:fixed; width:100%; min-width:820px; bottom:0; right:0; height:50px; border-top:1px solid #dedede;}
 div.canvasEditbar ul  {text-align:right; background:#fff; font-size:0;}
 div.canvasEditbar ul li{display:inline-block; border-left:1px solid #dedede;}
 div.canvasEditbar ul li button{padding:0 20px; line-height:50px; font-size:15px;}
+
+
+
+
 
