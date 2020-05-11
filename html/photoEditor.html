@@ -14,26 +14,26 @@
 		<div class="toolBar">
 			<ul>
 				<li>
-					<div class="item_tool photo active">
-						<span class="itemIcon"></span>
+					<div class="item_tool active">
+						<span class="itemIcon photo"></span>
 						<span class="itemName">내 사진</span>
 					</div>
 				</li>
 				<li>
-					<div class="item_tool template">
-						<span class="itemIcon"></span>
+					<div class="item_tool">
+						<span class="itemIcon template"></span>
 						<span class="itemName">추천템플릿</span>
 					</div>
 				</li>
 				<li>
-					<div class="item_tool sticker">
-						<span class="itemIcon"></span>
+					<div class="item_tool">
+						<span class="itemIcon sticker"></span>
 						<span class="itemName">스티커</span>
 					</div>
 				</li>
 				<li>
-					<div class="item_tool typeTxt">
-						<span class="itemIcon"></span>
+					<div class="item_tool">
+						<span class="itemIcon typeTxt"></span>
 						<span class="itemName">텍스트</span>
 					</div>
 				</li>
@@ -59,7 +59,7 @@
 						<input type="text" class="" placeholder="검색어를 입력하세요.">
 						<button class="text_del"></button>
 						
-						<div class="layerSelect" style="">
+						<div class="layerSelect" style="display:none;">
 							<ul>
 								<li>여름날씨</li>
 								<li>입학/수능</li>
@@ -72,18 +72,24 @@
 							</ul>
 						</div>
 					</div>
+					<button class="w100p btn_sizeA btn_gray mg_t10">내 파일 불러오기<i class="icon_upload mg_l10"></i></button>
 				</div>
 			</div>
 			
 			<div class="library_list">
-				<ul>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
+				<div class="listBox">
+					<ul class="">
+						<li><img src="../img/1583286297666_3_thumb.jpg" alt=""></li>
+						<li><img src="../img/1583370634950_3_thumb.jpg" alt=""></li>
+						<li><img src="../img/1583370634950_3_thumb.jpg" alt=""></li>
+						<li><img src="../img/1583370587549_3_thumb.jpg" alt=""></li>
+						<li><img src="../img/1583370587549_3_thumb.jpg" alt=""></li>
+						<li><img src="../img/1583286297666_3_thumb.jpg" alt=""></li>
+						<li><img src="../img/1583370634950_3_thumb.jpg" alt=""></li>
+						<li><img src="../img/1583286297666_3_thumb.jpg" alt=""></li>
+						<li><img src="../img/1583370587549_3_thumb.jpg" alt=""></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		
@@ -102,7 +108,16 @@
 			<div class="editCanvas">
 			</div>
 		</div>
-			
+		
+		<div class="canvasEditbar">
+			<ul>
+				<li><button class="btn_white"><i class="icon_del mg_r10"></i>삭제</button></li>
+				<li><button class="btn_white"><i class="icon_prev mg_r10"></i>이전</button></li>
+				<li><button class="btn_white disabled"><i class="icon_next mg_r10"></i>다시</button></li>
+				<li><button class="btn_white"><i class="icon_reset mg_r10"></i>초기화</button></li>
+				<li><button class="btn_blue w160">제작완료</button></li>
+			</ul>
+		</div>		
 		
 	</div>
 	
