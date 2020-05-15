@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="./assets/css/photoeditor.css" />
+	<title>photoEditor</title>
+</head>
+
+<body>
+
+<div class="wrap-photoEditor">
+	<div class="wrap-side">
+		<div class="sidebar">
+			<div class="toolbar">
+				<ul>
+					<li>
+						<div class="item-tool file-input">
+							<label>
+								<i class="icon-photo item-icon"></i>
+								<span class="item-name">내 사진</span>
+								<input onchange="javascript:document.getElementById('file_route').value=this.value" type="file" name="" id="">
+							</label>
+						</div>
+					</li>
+					<li>
+						<div class="item-tool active">
+							<span class="icon-template item-icon"></span>
+							<span class="item-name">추천템플릿</span>
+						</div>
+					</li>
+					<li>
+						<div class="item-tool">
+							<span class="icon-sticker item-icon"></span>
+							<span class="item-name">스티커</span>
+						</div>
+					</li>
+					<li>
+						<div class="item-tool">
+							<span class="icon-typeTxt item-icon"></span>
+							<span class="item-name">텍스트</span>
+						</div>
+					</li>
+					<li>
+						<div class="item-tool">
+							<span class="icon-crop item-icon"></span>
+							<span class="item-name">자르기</span>
+						</div>
+					</li>
+					<li>
+						<div class="item-tool">
+							<span class="icon-rotate item-icon"></span>
+							<span class="item-name">회전</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<!-- 추천템플릿 -->
+		<div class="side-contents" style="display:;">
+			<div class="side-contents__header js-side-contents__header">
+				<span class="header__titBox">
+					추천템플릿
+				</span>
+				<div class="header__infobox mg-t10">
+					<p>안내 문구가 들어가는 영역입니다. 안내 문구가 들어가는 영역입니다.</p>
+				</div>
+				<div class="search-box mg-t25">
+					<ul class="list-popularity">
+						<li>#입학</li>
+						<li>#입학/수능</li>
+						<li>#쇼핑쿠폰</li>
+					</ul>
+					
+					<div class="input__search-box">
+						<input type="text" class="" placeholder="검색어를 입력하세요.">
+						<button class="text-del"></button>
+						
+						<div class="layer-select" style="display:none;">
+							<ul>
+								<li>여름날씨</li>
+								<li>입학/수능</li>
+								<li class="on">특별한 날</li>
+								<li>안부/감정</li>
+								<li>쇼핑/쿠폰</li>
+								<li>결혼</li>
+								<li>분양/휴대폰</li>
+								<li>이혼</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="side-contents__body">
+				<div class="item-box">				
+					<div class="none-list">
+						내역이 없습니다. 
+					</div>
+					<ul class="thumb-image">
+						<li><div><img src="./assets/images/1583286297666_3_thumb.jpg" alt="" class=""></div></li>
+						<li><div><img src="./assets/images/1583370634950_3_thumb.jpg" alt="" class=""></div></li>
+						<li><div><img src="./assets/images/1583370634950_3_thumb.jpg" alt="" class=""></div></li>
+						<li><div><img src="./assets/images/1583370587549_3_thumb.jpg" alt="" class=""></div></li>
+						<li><div><img src="./assets/images/1583370587549_3_thumb.jpg" alt="" class=""></div></li>
+						<li><div><img src="./assets/images/1583286297666_3_thumb.jpg" alt="" class=""></div></li>
+						<li><div><img src="./assets/images/1583370634950_3_thumb.jpg" alt="" class=""></div></li>
+						<li><div><img src="./assets/images/1583286297666_3_thumb.jpg" alt="" class=""></div></li>
+						<li><div><img src="./assets/images/1583370587549_3_thumb.jpg" alt="" class=""></div></li>
+						<li><div><img src="./assets/images/1583370634950_3_thumb.jpg" alt="" class=""></div></li>
+						<li><div><img src="./assets/images/1583370587549_3_thumb.jpg" alt="" class=""></div></li>
+						<li><div><img src="./assets/images/1583370587549_3_thumb.jpg" alt="" class=""></div></li>
+						<li><div><img src="./assets/images/1583286297666_3_thumb.jpg" alt="" class=""></div></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- /추천템플릿 -->
+		
+		<!-- 스티커 -->
+		<div class="side-contents" style="display:; left:354px;">
+			<div class="side-contents__header js-side-contents__header">
+				<span class="header__titBox">
+					스티커
+				</span>
+				<div class="header__infobox mg-t10">
+					<p>안내 문구가 들어가는 영역입니다. 안내 문구가 들어가는 영역입니다.</p>
+					<ul class="mg-t10">
+						<li>안내문구 1 입니다. 안내문구 1 입니다. 안내문구 1 입니다.</li>
+						<li>안내문구 2 입니다.</li>
+						<li>안내문구 3 입니다.</li>
+					</ul>
+				</div>
+				<div class="file-input w100p mg-t25">
+					<label class="w100p btn-sizeA btn-gray ">
+						업로드
+						<i class="icon-upload mg-l10"></i>
+						<input onchange="javascript:document.getElementById('file_route').value=this.value" type="file" name="requestFileInfo" id="requestFileInfo">
+					</label>
+				</div>
+				<div class="search-area mg-t10">					
+					<div class="input__search-box">
+						<input type="text" class="" placeholder="검색어를 입력하세요.">
+						<button class="text-del"></button>
+						<div class="layer-select" style="display:none;">
+							<ul>
+								<li>여름날씨</li>
+								<li>입학/수능</li>
+								<li class="on">특별한 날</li>
+								<li>안부/감정</li>
+								<li>쇼핑/쿠폰</li>
+								<li>결혼</li>
+								<li>분양/휴대폰</li>
+								<li>이혼</li>
+							</ul>
+						</div>
+					</div>
+				</div>	
+			</div>
+			<div class="side-contents__body js-side-contents__body">
+				<div class="item-box">
+					<ul class="thumb-image js-sticker-list">
+						<li class=""><div><img src="./assets/images/stickerSample1.gif" alt="" class=""></div></li>
+						<li class=""><div><img src="./assets/images/stickerSample2.gif" alt="" class=""></div></li>
+						<li class=""><div><img src="./assets/images/stickerSample3.gif" alt="" class=""></div></li>						
+						<li class=""><div><img src="./assets/images/thumbnailImg_30.gif" alt=""></div></li>
+						<li class=""><div><img src="./assets/images/stickerSample3.gif" alt="" class=""></div></li>
+						<li class=""><div><img src="./assets/images/thumbnailImg_12.gif" alt="" class=""></div></li>						
+						<li class=""><div><img src="./assets/images/thumbnailImg_30.gif" alt=""></div></li>
+						<li class=""><div><img src="./assets/images/thumbnailImg_30.gif" alt="" class=""></div></li>
+						<li class=""><div><img src="./assets/images/thumbnailImg_30.gif" alt="" class=""></div></li>
+						<li class=""><div><img src="./assets/images/stickerSample2.gif" alt="" class=""></div></li>
+						<li class=""><div><img src="./assets/images/stickerSample3.gif" alt="" class=""></div></li>
+						<li class=""><div><img src="./assets/images/stickerSample2.gif" alt="" class=""></div></li>								
+						<li class=""><div><img src="./assets/images/thumbnailImg_19.gif" alt=""></div></li>
+						<li class=""><div><img src="./assets/images/thumbnailImg_12.gif" alt=""></div></li>
+						<li class=""><div><img src="./assets/images/thumbnailImg_30.gif" alt=""></div></li>
+						<li class=""><div><img src="./assets/images/thumbnailImg_31.gif" alt=""></div></li>
+						<li class=""><div><img src="./assets/images/stickerSample2.gif" alt=""></div></li>
+						<li class=""><div><img src="./assets/images/thumbnailImg_11.jpg" alt=""></div></li>
+						<li class=""><div><img src="./assets/images/thumbnailImg_14.jpg" alt=""></div></li>
+						<li class=""><div><img src="./assets/images/thumbnailImg_14.jpg" alt=""></div></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- /스티커 -->
+		
+		<!-- 텍스트 -->
+		<div class="side-contents" style="display:;  left:614px;">
+			<div class="side-contents__header js-side-contents__header">
+				<span class="header__titBox">
+					텍스트
+				</span>
+				<div class="header__infobox mg-t10">
+					<p>안내 문구가 들어가는 영역입니다. 안내 문구가 들어가는 영역입니다.</p>
+				</div>
+			</div>
+			<div class="side-contents__body ">
+			
+			</div>
+			
+		</div>
+		<!-- /텍스트 -->
+		<!-- 자르기 -->
+		<div class="side-contents" style="display:none;">
+			<div class="side-contents__header js-side-contents__header">
+				<span class="header__titBox">
+					자르기
+				</span>
+			</div>
+			<div class="side-contents__body ">
+			
+			</div>
+			
+		</div>
+		<!-- /자르기 -->
+		<!-- 회전 -->
+		<div class="side-contents" style="display:none;">
+			<div class="side-contents__header js-side-contents__header">
+				<span class="header__titBox">
+					회전
+				</span>
+				<div class="header__infobox mg-t10">
+					<p>안내 문구가 들어가는 영역입니다. 안내 문구가 들어가는 영역입니다.</p>
+					
+				</div>
+			</div>
+			<div class="side-contents__body ">
+			
+			</div>
+			
+		</div>
+		<!-- /회전 -->
+	</div>
+	<div class="main-contents">
+		<div class="canvas-section">
+			<div class="canvas-area">
+				<div class="edit-canvas">
+					<div class="canvas-size-value">
+						<span class="canvas-width">640</span>
+						<i>x</i>
+						<span class="canvas-height">960</span>
+						<p>이미지 사이즈 안내 문구 영역</p>
+					</div>
+					<!-- 이미지 영역 -->
+					<div>
+						<canvas class="image-canvas" />
+					</div> 
+					<!-- /이미지 영역 -->
+				
+				</div>
+			</div>
+		</div>
+		<div class="canvas-editbar">
+			<ul>
+				<li><button class="btn_white"><i class="icon-del mg-r10"></i>선택 삭제</button></li>
+				<li><button class="btn_white"><i class="icon-prev mg-r10"></i>이전</button></li>
+				<li><button class="btn_white"><i class="icon-next mg-r10"></i>다시</button></li>
+				<li><button class="btn_white"><i class="icon-reset mg-r10"></i>전체삭제</button></li>
+				<li><button class="btn-blue w160">제작완료</button></li>
+			</ul>
+		</div>				
+	</div>
+</div>
+
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="./js/sample.js"></script>
+</body>
+</html>
